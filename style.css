@@ -1,0 +1,161 @@
+body{
+    max-height: 100vh;
+    margin: 0;
+    background-color: hsl(185, 41%, 84%);
+    text-align: center;
+    font-family: 'Space Mono', sans-serif;
+}
+h1{
+    color:hsl(183, 100%, 15%);
+    font-size: 27px;
+    margin-top: 35px;
+    letter-spacing: 7px;
+    opacity: 0.8;
+}
+input{
+    height:25px;
+}
+.mainContainer{                                                    /*Main container*/
+    display: flex;
+    width:920px;
+    height:490px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 47px auto 0;
+    border-radius: 20px;
+}
+.leftContainer{   
+    font-weight: 700;                                                /*Left container*/
+    width:50%;  
+}
+.bill-label, .tip-selection, .nrOfPeople{
+    margin: 35px 30px 30px 35px ;
+    text-align: left;
+    opacity: 0.6;
+}
+.bill-input {                                                       /*1st input*/
+    margin: 0 px 30px 35px ;
+    border-radius:5px;
+    border: none;
+    height: 35px;
+    width: 80%;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    padding: 0 10px 0;
+    cursor:pointer;
+}
+.bill-image{
+    position:absolute;
+    top:260px;
+    left:360px;
+}
+.bill-input:focus{
+    outline:none;
+}
+.tip-buttons{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: inline-grid;
+    grid-gap: 15px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: stretch;
+}
+.tip-buttons > button{
+    font-family: 'Space Mono',sans-serif;
+    background-color: hsl(183, 100%, 15%);
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tip-buttons > input{                                               /* 2nd input*/
+    width: 100px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    height:45px;
+    text-align: right;
+    padding: 0 10px 0;
+    cursor: pointer;
+}
+.tip-buttons > input:focus{
+    outline:none;
+}
+.tip-buttons > button.active{
+    background-color:hsl(185, 41%, 84%) ;
+}
+.nrOfPeople-input{                                                 /* 3rd input*/
+    width: 80%;        
+    height: 45px;                     
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    padding: 0 10px 0;
+    cursor: pointer;
+}
+.nrOfPeople-input:focus{
+    outline: none;
+}
+.nrOfPeople-img {
+    position: absolute;
+    top:580px;
+    left:360px;
+}
+.rightContainer{                                                /*Right container*/
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background-color: hsl(183, 100%, 15%);
+    margin: 35px 35px 35px 0;
+    border-radius: 20px;
+    justify-content: center;
+}
+p, span{
+    text-align: left;
+}
+p, .value1, .value2, button{
+    font-weight: 700;
+    font-size: 20px;
+    color:hsl(0, 0%, 100%);
+}
+.value1, .value2{
+    font-size: 30px;
+}
+span, .value1, .value2{
+    opacity: 0.5;
+}
+.results{
+    margin-top: -180px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width:90%;
+}
+.value1, .value2,p{
+    display: inline-block;
+}
+.tip-amount, .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reset-button{
+    position: absolute;
+    top:440px;
+    width:335px;
+    margin-top: 80px;
+    height: 50px;
+    background-color: hsl(184, 14%, 56%);
+    border-radius: 5px;
+    border: none;
+    color:hsl(183, 100%, 15%);
+    font-size: 18px;
+}
+.reset-button:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+/* background-color:hsl(172, 67%, 45%);
+background-color:hsl(183, 100%, 15%);
+background-color:hsl(186, 14%, 43%);
+background-color:hsl(184, 14%, 56%);
+background-color:hsl(185, 41%, 84%);
+background-color:hsl(189, 41%, 97%);
+background-color:hsl(0, 0%, 100%); */

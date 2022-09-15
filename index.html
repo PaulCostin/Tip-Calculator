@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Tip calculator app</title>
+</head>
+
+<body>
+  <h1>SPLI<br>TTER</h1>
+  <div class="mainContainer">
+    <div class="leftContainer">
+      <div class="bill-label"><label for="input">Bill</label></div>
+      <input class="bill-input" type="number" id="InputOfBill" placeholder="0.0">
+      <img class="bill-image"src="images/icon-dollar.svg" alt="InputOfBill">
+      <div class="tip-selection">Select Tip %</div>
+      <div class="tip-buttons">
+        <button class="btn">5%</button>
+        <button class="btn">10%</button>
+        <button class="btn">15%</button>
+        <button class="btn">25%</button>
+        <button class="btn">50%</button>
+        <input type="number" name="custom-tip" id="customTip" placeholder="Custom">
+      </div>
+      <div class="nrOfPeople">Number of People</div>
+        <input class="nrOfPeople-input" type="number" name="numberOfPeople" id="inputPeople" placeholder="1">
+        <img class="nrOfPeople-img" src="images/icon-person.svg" alt="inputPeople">
+    </div>
+    <div class="rightContainer">
+      <div class="results">
+          <div class="tip-amount"><p>Tip Amount <br> <span>/ person</span>  </p> <div class="value1">$ 5</div></div>
+          <div class="total"><p> Total <br> <span>/ person</span> </p><div class="value2">$ 200</div>
+        </div>
+      </div>
+      <button class="reset-button">RESET</button>
+    </div>
+  </div>       
+
+      
+
+</body>
+</html>
