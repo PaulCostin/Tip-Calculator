@@ -91,6 +91,16 @@ input{
 }
 .tip-buttons > button.active{
     background-color:hsl(185, 41%, 84%) ;
+    color:hsl(183, 100%, 15%);
+}
+
+#error{
+    color:red;
+    font-size: 15px;
+    position: absolute;
+    top: -40px;
+    left: 30px;
+    width: 100%;
 }
 .nrOfPeople-input{
     position: relative;
@@ -113,7 +123,7 @@ input{
 }
 .nrOfPeople-input > #icon-person {
     position: absolute;
-    top: 25px;
+    top: 15px;
     left:45px;
 }
 .rightContainer{                                                /*Right container*/
@@ -214,8 +224,8 @@ span, .value1, .value2{
         top:850px
     }
     .nrOfPeople-input > #icon-person {
-        top: 25px;
-        left:65px;
+        top: 15px;
+        left:70px;
     }
     .bill-input > #dollar-icon {
         top: 14px;
@@ -239,8 +249,8 @@ span, .value1, .value2{
             width: 81px;
          }
         .nrOfPeople-input > #icon-person {
-            top: 25px;
-            left: 40px;
+            top: 15px;
+            left: 45px;
         }
         .bill-input > #dollar-icon {
             top: 14px;
