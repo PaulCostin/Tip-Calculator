@@ -15,9 +15,12 @@
   <h1>SPLI<br>TTER</h1>
   <div class="mainContainer">
     <div class="leftContainer">
-      <div class="bill-label"><label for="input">Bill</label></div>
-      <input class="bill-input" type="number" id="InputOfBill" placeholder="0.0">
-      <img class="bill-image"src="images/icon-dollar.svg" alt="InputOfBill">
+      <div class="bill-label">Bill</div>
+      <div class="bill-input">
+        <input type="number" id="InputOfBill" placeholder="0.0">
+        <img id="dollar-icon" src="images/icon-dollar.svg" alt="InputOfBill">
+      </div>
+      
       <div class="tip-selection">Select Tip %</div>
       <div class="tip-buttons">
         <button class="btn">5%</button>
@@ -27,9 +30,12 @@
         <button class="btn">50%</button>
         <input type="number" name="custom-tip" id="customTip" placeholder="Custom">
       </div>
-      <div class="nrOfPeople">Number of People</div>
-        <input class="nrOfPeople-input" type="number" name="numberOfPeople" id="inputPeople" placeholder="1">
-        <img class="nrOfPeople-img" src="images/icon-person.svg" alt="inputPeople">
+      <div class="nrOfPeople-label">Number of People</div>
+      <div class="nrOfPeople-input">
+        <input type="number" name="numberOfPeople"  placeholder="1">
+        <img id="icon-person" src="images/icon-person.svg" alt="inputPeople">
+        <p id="error"></p>
+       </div>
     </div>
     <div class="rightContainer">
       <div class="results">
