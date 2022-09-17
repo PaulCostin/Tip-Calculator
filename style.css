@@ -9,6 +9,7 @@ h1{
     color:hsl(183, 100%, 15%);
     font-size: 27px;
     margin-top: 35px;
+    mar
     letter-spacing: 7px;
     opacity: 0.8;
 }
@@ -78,7 +79,7 @@ input{
     border: none;
     background-color: hsl(189, 41%, 97%);
     height:45px;
-    text-align: right;
+    text-align: center;
     padding: 0 10px 0;
     cursor: pointer;
     border-radius: 5px;
@@ -170,8 +171,99 @@ span, .value1, .value2{
 }
 
 
-@media screen and (max-width:{
-    
+@media screen and (max-width:1200px){
+    h1{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .tip-buttons > button{
+        height: 65px;
+        width: 200px;
+    }
+    .tip-buttons > input{
+        height: 65px;
+        width: 180px;
+     }
+
+    .bill-label, .tip-selection, .nrOfPeople-label{
+        margin: 33px 30px 30px 30px ;
+        text-align: left;
+        opacity: 0.6;
+        font-size: 20px;
+    }
+    .mainContainer{
+        margin-top:20px;
+        flex-wrap: wrap;
+        width: 700px;
+        height: 940px;
+    }
+    .leftContainer{
+        width: 100%;
+        height:500px
+    }
+    .rightContainer{
+        width: 100%;
+        margin: 55px 35px 35px 35px;
+        height:350px;
+    }
+    .results{
+        margin-top: -130px;
+    }
+    .reset-button{
+        font-size: 20px;
+        width:400px;
+        top:850px
+    }
+    .nrOfPeople-input > #icon-person {
+        top: 25px;
+        left:65px;
+    }
+    .bill-input > #dollar-icon {
+        top: 14px;
+        left: 70px;
+    }
+}
+
+@media screen and (max-width: 700px){
+        .mainContainer{
+            width: 400px;
+            height: 850px;
+        }
+        .tip-buttons > button{
+            font-size: 25px;
+            height: 50px;
+            width: 100px;
+        }
+        .tip-buttons > input{
+            font-size: 18px;
+            height: 50px;
+            width: 81px;
+         }
+        .nrOfPeople-input > #icon-person {
+            top: 25px;
+            left: 40px;
+        }
+        .bill-input > #dollar-icon {
+            top: 14px;
+            left: 45px;
+        }
+        .rightContainer{
+            margin-top:25px;
+            height:300px;
+        }
+        .results{
+            margin-top: -100px;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 250px;
+        }
+        .reset-button{
+            top: 770px;
+            width:250px;
+        }
+        .bill-label, .tip-selection, .nrOfPeople-label{
+            text-align: center;          
+        }
 }
 /* background-color:hsl(172, 67%, 45%);
 background-color:hsl(183, 100%, 15%);
